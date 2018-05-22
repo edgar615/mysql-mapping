@@ -1,1 +1,1 @@
-映射MySQL的工具
+映射MySQL的工具，从jdbc-codegen中提取而来，所以有几个方法带有jdbc-codegen的特征
