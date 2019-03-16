@@ -1,5 +1,6 @@
 package com.github.edgar615.mysql.mapping;
 
+import com.google.common.base.CaseFormat;
 import com.google.common.collect.Maps;
 
 import java.util.ArrayList;
@@ -104,6 +105,15 @@ public class Table {
             .map(c -> Maps.immutableEntry(c.getName(), c.getParameterType()))
             .collect(Collectors.toList());
   }
+
+  /**
+   * 返回驼峰格式
+   * @return
+   */
+  public String getUpperCamelName() {
+    return CaseFormat.LOWER_UNDERSCORE.to(CaseFormat.UPPER_CAMEL, name);
+  }
+
 
   @Override
   public String toString() {
