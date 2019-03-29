@@ -14,7 +14,8 @@ public enum ParameterType {
   BIGDECIMAL("BigDecimal", "BigDecimal", true),
   DOUBLE("Double", "double", true),
   CHAR("Character", "char", true),
-  LIST("List", "List", false);
+  LIST("List", "List", false),
+  BYTE_ARRAY("byte[]", "byte[]", false);
 
   private String name;
 
