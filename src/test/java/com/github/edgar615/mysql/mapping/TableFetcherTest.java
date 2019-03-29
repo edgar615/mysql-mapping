@@ -11,10 +11,10 @@ public class TableFetcherTest {
   public static void main(String[] args) throws Exception {
 
     TableMappingOptions options = new TableMappingOptions()
-            .setHost("test.ihorn.com.cn")
+            .setHost("localhost")
             .setDatabase("user_new")
             .setUsername("admin")
-            .setPassword("csst");
+            .setPassword("123456");
     TableMapping mapping = new TableMapping(options);
     List<Table> tables = mapping.fetchTable();
     System.out.println(tables);
